@@ -15,5 +15,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: process.env.NODE_ENV === "production" ? "/mundo-exato-digital/" : "/",
+  build: {
+    sourcemap: false,
+  },
+  base: process.env.NODE_ENV === "production" ? "/mundoexatodigital/" : "/",
 }));
