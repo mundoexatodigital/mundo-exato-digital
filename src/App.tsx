@@ -4,7 +4,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import PhysicsLesson from "./pages/PhysicsLesson";
 import CalorSensivel from "./pages/CalorSensivel";
 import CalorLatente from "./pages/CalorLatente";
 import GasesPerfeitos from "./pages/GasesPerfeitos";
@@ -32,7 +31,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/physics-lesson" element={<PhysicsLesson />} />
           <Route path="/calor-sensivel" element={<CalorSensivel />} />
           <Route path="/calor-latente" element={<CalorLatente />} />
           <Route path="/gases-perfeitos" element={<GasesPerfeitos />} />
